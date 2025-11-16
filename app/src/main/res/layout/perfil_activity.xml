@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Foto -->
+        <ImageView
+            android:id="@+id/ivFotoPerfil"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/foto_perfil_default"
+            android:scaleType="centerCrop"
+            android:background="@drawable/fondo_circular"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Datos -->
+        <TextView android:text="Nombre:" style="@style/EstiloTitulo"/>
+        <TextView android:id="@+id/tvNombre" style="@style/EstiloTitulo" />
+
+        <TextView android:text="Apellido Paterno:" style="@style/EstiloTitulo"/>
+        <TextView android:id="@+id/tvApellidoP" style="@style/EstiloTitulo" />
+
+        <TextView android:text="Apellido Materno:" style="@style/EstiloTitulo"/>
+        <TextView android:id="@+id/tvApellidoM" style="@style/EstiloTitulo" />
+
+        <TextView android:text="Correo:" style="@style/EstiloTitulo"/>
+        <TextView android:id="@+id/tvCorreo" style="@style/EstiloTitulo" />
+
+        <TextView android:text="Teléfono:" style="@style/EstiloTitulo"/>
+        <TextView android:id="@+id/tvTelefono" style="@style/EstiloTitulo" />
+
+        <!-- Botón editar -->
+        <Button
+            android:id="@+id/btnEditarPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar Perfil"
+            android:layout_marginTop="20dp" />
+
+        <!-- Acciones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnBorradores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Borradores"
+                style="@style/EstiloBotones"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnFavoritos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favoritos"
+                style="@style/EstiloBotones"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnPublicaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publicaciones"
+                style="@style/EstiloBotones" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

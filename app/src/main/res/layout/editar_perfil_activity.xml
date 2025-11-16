@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="24dp"
+    tools:context=".EditarPerfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        style="@style/EstiloLayoutCentrado"
+        >
+
+
+
+        <!-- Foto circular -->
+        <ImageView
+            android:id="@+id/FotoPerfil"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@android:drawable/sym_def_app_icon"
+            android:scaleType="centerCrop"
+            android:background="@drawable/fondo_circular"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnCambiarFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cambiar foto"
+            android:enabled="false"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Nombre -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            style="@style/EstiloTitulo" />
+
+        <EditText
+            android:id="@+id/Nombre"
+            style="@style/EstiloEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tu nombre"
+            android:enabled="false" />
+
+        <!-- Apellido Paterno -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellido Paterno"
+            android:layout_marginTop="8dp"
+            style="@style/EstiloTitulo"/>
+
+        <EditText
+            android:id="@+id/ApellidoP"
+            style="@style/EstiloEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tu apellido paterno"
+            android:enabled="false" />
+
+        <!-- Apellido Materno -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellido Materno"
+            android:layout_marginTop="8dp"
+            style="@style/EstiloTitulo"/>
+
+        <EditText
+            android:id="@+id/ApellidoM"
+            style="@style/EstiloEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tu apellido materno"
+            android:enabled="false" />
+
+        <!-- Teléfono -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teléfono"
+            android:layout_marginTop="8dp"
+            style="@style/EstiloTitulo"/>
+
+        <EditText
+            android:id="@+id/Telefono"
+            style="@style/EstiloEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1234567890"
+            android:inputType="phone"
+            android:enabled="false" />
+
+        <!-- Correo (no editable) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo"
+            android:layout_marginTop="8dp"
+            style="@style/EstiloTitulo" />
+
+        <EditText
+            android:id="@+id/Correo"
+            style="@style/EstiloEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="usuario@correo.com"
+            android:enabled="true"
+            android:inputType="textEmailAddress" />
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:layout_marginStart="16dp"
+                android:enabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
