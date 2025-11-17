@@ -28,7 +28,8 @@ data class RegisterRequest(
     val correo: String,
     val contrasenia: String,
     val alias: String,
-    val telefono: String? = null      // ← Opcional
+    val telefono: String? = null,      // ← Opcional
+    val avatar: String? = null
 )
 
 data class RegisterResponse(

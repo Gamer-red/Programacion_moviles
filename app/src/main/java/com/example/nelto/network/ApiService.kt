@@ -9,7 +9,7 @@ interface ApiService {
     suspend fun login(@Body request: LoginRequest): Response<LoginResponse>
 
     @POST("auth/register")
-    suspend fun register(@Body request: RegisterRequest): Response<RegisterResponse>
+    suspend fun register(@Body registerRequest: RegisterRequest): Response<RegisterResponse>
 
     // Agregaremos más endpoints después
     @GET("posts")
