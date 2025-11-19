@@ -45,7 +45,8 @@ data class UpdateProfileRequest(
     val apellido_materno: String,
     val alias: String,
     val telefono: String,
-    val correo: String
+    val correo: String,
+    val avatar: String? = null
 )
 
 data class UpdateProfileResponse(

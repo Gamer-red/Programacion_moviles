@@ -16,9 +16,7 @@ interface ApiService {
     suspend fun getPosts(@Header("Authorization") token: String): Response<String> // Temporal
 
     @GET("users/profile")
-    suspend fun getProfile(
-        @Header("Authorization") token: String
-    ): Response<ProfileResponse>
+    suspend fun getProfile(@Header("Authorization") token: String): Response<ProfileResponse>
 
     @PUT("users/profile")
     suspend fun updateProfile(

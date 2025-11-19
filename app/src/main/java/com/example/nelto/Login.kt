@@ -50,11 +50,9 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
     private fun isValidEmail(email: String): Boolean {
         return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
     }
-
     private fun loginUser(correo: String, contrasenia: String) {
         CoroutineScope(Dispatchers.IO).launch {
             try {
@@ -95,7 +93,7 @@ class Login : AppCompatActivity() {
 
                         Toast.makeText(this@Login, "✅ ¡Bienvenido ${loginResponse.user.Nombre}!", Toast.LENGTH_SHORT).show()
 
-                        val intent = Intent(this@Login, Perfil::class.java)
+                        val intent = Intent(this@Login, Inicio::class.java)
                         startActivity(intent)
                         finish()
 
